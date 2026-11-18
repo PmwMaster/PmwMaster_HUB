@@ -12,6 +12,9 @@ import { ExternalLink } from "lucide-react";
 export const LivePlatforms: React.FC = () => {
   return (
     <section id="transmissoes" className="py-20 md:py-28 bg-vice-dark relative overflow-hidden">
+      {/* Top seamless blend from Hero */}
+      <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-vice-dark via-vice-dark/80 to-transparent pointer-events-none" />
+
       {/* Decorative Glow */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-vice-pink/10 rounded-full blur-[160px] pointer-events-none" />
 

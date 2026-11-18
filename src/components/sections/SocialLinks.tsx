@@ -27,18 +27,22 @@ export const SocialLinks: React.FC = () => {
           subtitle="Siga os canais verificados para acompanhar as novidades e avisos de lives."
         />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-          {socialLinks.map((social) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 md:gap-6">
+          {socialLinks.map((social, index) => (
             <a
               key={social.id}
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block focus:outline-none"
+              className={
+                index === 4
+                  ? "col-span-2 sm:col-span-1 max-w-[260px] sm:max-w-none mx-auto w-full group block focus:outline-none"
+                  : "group block focus:outline-none"
+              }
             >
               <Card
                 glowColor="pink"
-                className="h-full flex flex-col items-center text-center p-5 bg-vice-surface/90 group-hover:bg-vice-surfaceLight border-white/[0.08] group-hover:border-vice-pink/40 transition-all duration-300"
+                className="h-full flex flex-col items-center text-center p-4 sm:p-5 bg-vice-surface/90 group-hover:bg-vice-surfaceLight border-white/[0.08] group-hover:border-vice-pink/40 transition-all duration-300"
               >
                 <div className="relative w-16 h-16 rounded-2xl bg-black/60 border border-white/10 flex items-center justify-center shadow-md overflow-hidden group-hover:scale-105 group-hover:border-vice-pink/50 transition-all mb-4">
                   {logoMap[social.id] && (

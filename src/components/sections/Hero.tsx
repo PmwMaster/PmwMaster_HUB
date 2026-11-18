@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex flex-col justify-end pt-32 sm:pt-52 md:pt-80 pb-12 sm:pb-16 overflow-hidden bg-vice-dark"
+      className="relative min-h-screen flex flex-col justify-end pt-28 sm:pt-48 md:pt-80 pb-12 sm:pb-16 overflow-hidden bg-vice-dark"
     >
       {/* Background Wallpaper: Full-Visibility Official Jason & Lucia GTA VI Artwork */}
       <div className="absolute inset-0 z-0">
@@ -24,11 +24,14 @@ export const Hero: React.FC = () => {
           unoptimized
           className="object-cover object-[62%_12%] sm:object-[60%_top] md:object-top filter brightness-[0.88] md:brightness-[0.78] contrast-105"
         />
-        {/* Soft Bottom Gradient so it blends smoothly into the next section */}
-        <div className="absolute inset-0 bg-gradient-to-t from-vice-dark via-vice-dark/30 md:via-vice-dark/50 to-transparent" />
+        {/* Soft Ambient Overlay for Atmosphere */}
+        <div className="absolute inset-0 bg-gradient-to-t from-vice-dark/60 via-transparent to-transparent" />
         {/* Top Vignette for Navbar legibility */}
-        <div className="absolute top-0 left-0 right-0 h-24 md:h-40 bg-gradient-to-b from-vice-dark/70 md:from-vice-dark/80 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-24 md:h-40 bg-gradient-to-b from-vice-dark/80 to-transparent" />
       </div>
+
+      {/* Seamless Transition Gradient to the Next Section (Eliminates any harsh cut/line) */}
+      <div className="absolute bottom-0 left-0 right-0 h-44 sm:h-64 bg-gradient-to-t from-vice-dark via-vice-dark/85 to-transparent pointer-events-none z-10" />
 
       {/* Vice City Police Maverick Helicopter Flyby Animation */}
       <ViceCityHelicopter />
@@ -38,13 +41,13 @@ export const Hero: React.FC = () => {
       <div className="absolute top-1/3 right-1/4 w-[450px] h-[450px] bg-vice-cyan/15 rounded-full blur-[140px] pointer-events-none" />
 
       {/* Content positioned in the lower third to let the characters shine */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 text-center w-full">
         {/* Main Headline - Vice City Sunset */}
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-4xl sm:text-6xl md:text-7xl font-display font-black uppercase tracking-tight text-white leading-none mb-5 drop-shadow-[0_12px_30px_rgba(0,0,0,0.95)]"
+          className="text-3xl sm:text-5xl md:text-7xl font-display font-black uppercase tracking-tight text-white leading-none mb-4 sm:mb-5 drop-shadow-[0_12px_30px_rgba(0,0,0,0.95)]"
         >
           A CASA DO GTA VI.
           <br />
@@ -58,7 +61,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-slate-100 font-medium leading-relaxed mb-8 drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]"
+          className="max-w-2xl mx-auto text-sm sm:text-base md:text-xl text-slate-100 font-medium leading-relaxed mb-6 sm:mb-8 drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)] px-2"
         >
           {siteConfig.hero.subheadline}
         </motion.p>
