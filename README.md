@@ -1,30 +1,85 @@
-# 🚀 PMW Master Hub
+# 🎮 PmwMaster Hub
 
-Bem-vindo ao **PMW Master Hub**, o repositório central que reúne projetos, ferramentas, automações e recursos desenvolvidos sob a marca **PMW Master**.
+> Plataforma digital oficial do ecossistema e comunidade gamer do criador **PmwMaster**.
 
-## 🎯 Sobre o Projeto
-
-Este espaço funciona como um ponto de encontro entre **desenvolvimento de software** e **criação de conteúdo**. Aqui você encontra desde utilitários para transmissões ao vivo (Kick, TikTok e YouTube) até projetos experimentais, templates e integrações voltadas para produtividade e comunidade.
-
-## 🧩 O que você encontra aqui
-
-- **🎥 Ferramentas de Stream & Live:** Scripts, overlays personalizados, alertas e automações para OBS Studio e multistreaming.
-- **💻 Projetos & Experimentos:** Aplicações web, APIs e protótipos desenvolvidos para resolver problemas reais e testar novas tecnologias.
-- **🛠️ Utilitários & Configs:** Dotfiles, setups de ambiente e snippets reutilizáveis.
-- **🌐 Ecossistema & Comunidade:** Links, materiais de apoio e projetos colaborativos.
-
-## 🛠️ Tecnologias Frequentes
-
-- **Frontend:** Next.js, TypeScript, Tailwind CSS, Framer Motion
-- **Backend & Cloud:** Python, Java (Spring Boot), PostgreSQL, Docker, AWS
-- **Streaming & Automação:** OBS Studio, WebSockets, APIs de chat e eventos
-
-## 🌐 Conecte-se
-
-- **Kick:** [kick.com/pmwmaster](https://kick.com)
-- **TikTok:** [@pmw_master](https://tiktok.com)
-- **GitHub:** [@PmwMaster](https://github.com/PmwMaster)
+Construído com arquitetura moderna, identidade visual gamer premium, foco em transmissões, vídeos, Discord e preparação para a era de **GTA VI**.
 
 ---
 
-*Desenvolvido por Cristiano Xavier (PMW Master).*
+## ⚡ Tecnologias
+
+- **Framework:** [Next.js 14 (App Router)](https://nextjs.org/)
+- **Linguagem:** TypeScript
+- **Estilização:** Tailwind CSS (tema gamer neon customizado)
+- **Animações:** Framer Motion
+- **Ícones:** Lucide React
+- **SEO:** Metadados dinâmicos, Open Graph, Twitter Cards, Sitemap e Robots.txt
+- **Deploy:** Otimizado para publicação direta na Vercel
+
+---
+
+## 🚀 Como Executar
+
+### 1. Instalar as dependências
+```bash
+npm install
+```
+
+### 2. Iniciar o servidor de desenvolvimento
+```bash
+npm run dev
+```
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+### 3. Build de produção
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## ⚙️ Configuração Centralizada
+
+Toda a personalização de links, textos e conteúdos está centralizada na pasta `src/config/`:
+
+| Arquivo | Descrição |
+| :--- | :--- |
+| `src/config/site.ts` | Informações do site, SEO, textos da Hero, história e estatísticas da seção Sobre |
+| `src/config/platforms.ts` | Canais de transmissão (TikTok Live, Kick, Twitch) e status de live |
+| `src/config/social.ts` | Links e seguidores de todas as redes sociais oficiais |
+| `src/config/events.ts` | Cronograma de transmissões semanais e eventos especiais |
+| `src/config/gallery.ts` | Galeria de melhores momentos, cortes e Shorts (formatos 9:16 e 16:9) |
+
+---
+
+## 🎨 Sistema de Assets & Imagens
+
+Consulte o arquivo [`ASSETS.md`](./ASSETS.md) para detalhes completos sobre as dimensões recomendadas e pastas de cada imagem em `public/assets/`.
+
+O projeto conta com o componente `ImagePlaceholder`, que garante que o layout permaneça impecável com visual neon mesmo antes das fotos e banners oficiais serem adicionados.
+
+---
+
+## 💎 Estrutura do Projeto
+
+```text
+pmwmaster_hub/
+├── public/
+│   └── assets/           # Imagens, logos e artes da marca
+├── src/
+│   ├── app/              # Rotas, layout e metadados SEO do App Router
+│   ├── components/
+│   │   ├── layout/       # Navbar e Footer
+│   │   ├── sections/     # Hero, LivePlatforms, About, Community, Gallery, Schedule, SocialLinks
+│   │   └── ui/           # Button, Card, SectionHeading, ImagePlaceholder
+│   ├── config/           # Arquivos centrais de configuração
+│   ├── lib/              # Utilitários (cn, tailwind-merge)
+│   └── types/            # Tipagens TypeScript estritas
+├── ASSETS.md             # Guia de dimensões e substituição de imagens
+└── prompt inicial.md     # Especificação técnica do ecossistema PmwMaster
+```
+
+---
+
+© PmwMaster. *Play Together. Create Moments.*

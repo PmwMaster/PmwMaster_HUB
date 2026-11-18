@@ -1,0 +1,40 @@
+import { LivePlatform } from "@/types";
+
+export const livePlatforms: LivePlatform[] = [
+  {
+    id: "tiktok",
+    name: "TikTok Live",
+    handle: "@pmwmaster",
+    url: "https://www.tiktok.com/@pmwmaster",
+    icon: "tiktok",
+    color: "#FF007A",
+    badgeText: "Canal Oficial",
+    description: "Lives dinâmicas com muita resenha, gameplays e interação rápida no chat.",
+    image: "/assets/hero/vice-city-skyline.jpg",
+    isLive: false,
+  },
+  {
+    id: "kick",
+    name: "Kick",
+    handle: "pmw-master",
+    url: "https://kick.com/pmw-master",
+    icon: "kick",
+    color: "#53FC18",
+    badgeText: "Lives Principais",
+    description: "Transmissões completas em alta definição e gameplays longas sem interrupções.",
+    image: "/assets/gallery/grotti-cheetah.jpg",
+    isLive: false,
+  },
+  {
+    id: "youtube",
+    name: "YouTube",
+    handle: "@PmwMaster",
+    url: "https://www.youtube.com/@PmwMaster",
+    icon: "youtube",
+    color: "#00F0FF",
+    badgeText: "Vídeos & Lives",
+    description: "Transmissões especiais, gameplays gravadas, cortes e cobertura de jogos.",
+    image: "/assets/gallery/squalo-speedboat.jpg",
+    isLive: false,
+  },
+];
