@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex flex-col justify-end pt-64 md:pt-80 pb-16 overflow-hidden bg-vice-dark"
+      className="relative min-h-screen flex flex-col justify-end pt-40 sm:pt-60 md:pt-80 pb-12 sm:pb-16 overflow-hidden bg-vice-dark"
     >
       {/* Background Wallpaper: Full-Visibility Official Jason & Lucia GTA VI Artwork */}
       <div className="absolute inset-0 z-0">
@@ -22,12 +22,12 @@ export const Hero: React.FC = () => {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-top filter brightness-[0.78] contrast-110"
+          className="object-cover object-[38%_top] sm:object-[42%_top] md:object-top filter brightness-[0.82] md:brightness-[0.78] contrast-110"
         />
         {/* Soft Bottom Gradient so it blends smoothly into the next section */}
-        <div className="absolute inset-0 bg-gradient-to-t from-vice-dark via-vice-dark/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-vice-dark via-vice-dark/40 md:via-vice-dark/50 to-transparent" />
         {/* Top Vignette for Navbar legibility */}
-        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-vice-dark/80 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-32 md:h-40 bg-gradient-to-b from-vice-dark/80 to-transparent" />
       </div>
 
       {/* Vice City Police Maverick Helicopter Flyby Animation */}
