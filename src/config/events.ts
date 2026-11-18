@@ -10,7 +10,7 @@ export const upcomingEvents: EventItem[] = [
     description: "Transmissão histórica do lançamento! Jogando os primeiros minutos da campanha ao vivo com o chat decidindo tudo.",
     status: "especial",
     platform: "TikTok, Kick & YouTube",
-    image: "/assets/hero/hero-bg.jpg",
+    image: "/assets/events/bank-vault-heist.jpg",
   },
   {
     id: "stream-02",
@@ -21,7 +21,7 @@ export const upcomingEvents: EventItem[] = [
     description: "Desbravando cidades, pântanos, praias de Vice City e avançando na história dos protagonistas.",
     status: "confirmado",
     platform: "TikTok, Kick & YouTube",
-    image: "/assets/events/leonida-keys.jpg",
+    image: "/assets/events/vice-city-helicopter-sunset.jpg",
   },
   {
     id: "stream-03",
@@ -32,6 +32,6 @@ export const upcomingEvents: EventItem[] = [
     description: "Exploração de mistérios, easter eggs do mapa e salas de voz abertas no Discord com os inscritos.",
     status: "confirmado",
     platform: "Kick, YouTube & Discord",
-    image: "/assets/community/community-neon.png",
+    image: "/assets/events/leonida-keys.jpg",
   },
 ];
