@@ -1,8 +1,8 @@
-# 🎮 PmwMaster Hub
+# 🎮 PMW Master Hub
 
-> Plataforma digital oficial do ecossistema e comunidade gamer do criador **PmwMaster**.
+> Plataforma digital oficial e hub de entretenimento gamer do criador **PmwMaster**.
 
-Construído com arquitetura moderna, identidade visual gamer premium, foco em transmissões, vídeos, Discord e preparação para a era de **GTA VI**.
+Construído com arquitetura moderna, identidade visual gamer premium no estilo **Vice City / GTA VI**, foco em multistreaming (TikTok, Kick, YouTube), comunidade no Discord e contagem regressiva para o lançamento de **GTA VI**.
 
 ---
 
@@ -10,22 +10,33 @@ Construído com arquitetura moderna, identidade visual gamer premium, foco em tr
 
 - **Framework:** [Next.js 14 (App Router)](https://nextjs.org/)
 - **Linguagem:** TypeScript
-- **Estilização:** Tailwind CSS (tema gamer neon customizado)
-- **Animações:** Framer Motion
+- **Estilização:** Tailwind CSS (tema Vice City neon personalizado)
+- **Animações:** Framer Motion (Helicóptero Vice City, estrelas de perseguição, transições suaves)
+- **Áudio / Web Audio API:** Síntese de efeitos sonoros clássicos para Easter Eggs de teclado (`GTA`, `VICE`, `PMW`)
 - **Ícones:** Lucide React
-- **SEO:** Metadados dinâmicos, Open Graph, Twitter Cards, Sitemap e Robots.txt
+- **SEO & Performance:** Metadados dinâmicos, Open Graph, Sitemap e Robots.txt
 - **Deploy:** Otimizado para publicação direta na Vercel
+
+---
+
+## 🌐 Conecte-se
+
+- **Kick:** [kick.com/pmw-master](https://kick.com/pmw-master)
+- **TikTok:** [@pmwmaster](https://www.tiktok.com/@pmwmaster)
+- **YouTube:** [@PmwMaster](https://www.youtube.com/@PmwMaster)
+- **Discord:** [discord.gg/7tAB7BRzc](https://discord.gg/7tAB7BRzc)
+- **GitHub:** [@PmwMaster](https://github.com/PmwMaster)
 
 ---
 
 ## 🚀 Como Executar
 
-### 1. Instalar as dependências
+### 1. Instalar dependências
 ```bash
 npm install
 ```
 
-### 2. Iniciar o servidor de desenvolvimento
+### 2. Iniciar servidor de desenvolvimento
 ```bash
 npm run dev
 ```
@@ -45,19 +56,10 @@ Toda a personalização de links, textos e conteúdos está centralizada na past
 
 | Arquivo | Descrição |
 | :--- | :--- |
-| `src/config/site.ts` | Informações do site, SEO, textos da Hero, história e estatísticas da seção Sobre |
-| `src/config/platforms.ts` | Canais de transmissão (TikTok Live, Kick, Twitch) e status de live |
-| `src/config/social.ts` | Links e seguidores de todas as redes sociais oficiais |
-| `src/config/events.ts` | Cronograma de transmissões semanais e eventos especiais |
-| `src/config/gallery.ts` | Galeria de melhores momentos, cortes e Shorts (formatos 9:16 e 16:9) |
-
----
-
-## 🎨 Sistema de Assets & Imagens
-
-Consulte o arquivo [`ASSETS.md`](./ASSETS.md) para detalhes completos sobre as dimensões recomendadas e pastas de cada imagem em `public/assets/`.
-
-O projeto conta com o componente `ImagePlaceholder`, que garante que o layout permaneça impecável com visual neon mesmo antes das fotos e banners oficiais serem adicionados.
+| `src/config/site.ts` | Informações do site, SEO, textos da Hero e metadados |
+| `src/config/platforms.ts` | Canais de transmissão (TikTok, Kick, YouTube) |
+| `src/config/social.ts` | Links e dados de todas as redes sociais oficiais |
+| `src/config/events.ts` | Cronograma de transmissões semanais e contagem regressiva |
 
 ---
 
@@ -66,20 +68,20 @@ O projeto conta com o componente `ImagePlaceholder`, que garante que o layout pe
 ```text
 pmwmaster_hub/
 ├── public/
-│   └── assets/           # Imagens, logos e artes da marca
+│   └── assets/           # Imagens, logos e artes oficiais da marca
 ├── src/
 │   ├── app/              # Rotas, layout e metadados SEO do App Router
 │   ├── components/
+│   │   ├── effects/      # CheatCodeListener, ViceCityHelicopter, WantedLevel, GtaCountdown
 │   │   ├── layout/       # Navbar e Footer
-│   │   ├── sections/     # Hero, LivePlatforms, About, Community, Gallery, Schedule, SocialLinks
-│   │   └── ui/           # Button, Card, SectionHeading, ImagePlaceholder
+│   │   ├── sections/     # Hero, LivePlatforms, About, Community, Schedule, SocialLinks
+│   │   └── ui/           # Button, Card, SectionHeading
 │   ├── config/           # Arquivos centrais de configuração
 │   ├── lib/              # Utilitários (cn, tailwind-merge)
 │   └── types/            # Tipagens TypeScript estritas
-├── ASSETS.md             # Guia de dimensões e substituição de imagens
-└── prompt inicial.md     # Especificação técnica do ecossistema PmwMaster
+└── README.md
 ```
 
 ---
 
-© PmwMaster. *Play Together. Create Moments.*
+© PmwMaster. *Mais que gameplay. Uma comunidade.*

@@ -119,7 +119,7 @@ export const About: React.FC = () => {
             <div className="pt-2 flex items-center gap-3">
               <Button
                 href="#transmissoes"
-                variant="primary"
+                variant="neon"
                 size="md"
                 className="flex-1 text-xs font-bold py-3"
               >
