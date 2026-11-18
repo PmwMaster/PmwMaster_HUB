@@ -10,7 +10,7 @@ export const livePlatforms: LivePlatform[] = [
     color: "#FF007A",
     badgeText: "Canal Oficial",
     description: "Lives dinâmicas com muita resenha, gameplays e interação rápida no chat.",
-    image: "/assets/hero/vice-city-skyline.jpg",
+    image: "/assets/gallery/dirt-bike-chase.jpg",
     isLive: false,
   },
   {
