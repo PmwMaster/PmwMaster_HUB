@@ -83,6 +83,23 @@ export const Schedule: React.FC = () => {
             );
           })}
         </div>
+
+        {/* Notice for remaining schedule */}
+        <div className="mt-8 p-4 rounded-2xl bg-white/[0.03] border border-white/[0.06] text-center max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-slate-400">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-vice-cyan animate-pulse" />
+            <span>Próximas datas e horários serão anunciados ao vivo e no Discord.</span>
+          </div>
+          <Button
+            href="https://discord.gg/7tAB7BRzc"
+            isExternal
+            variant="glass"
+            size="sm"
+            className="text-[11px] font-bold py-1.5 px-3 shrink-0"
+          >
+            Avisos no Discord
+          </Button>
+        </div>
       </div>
     </section>
   );

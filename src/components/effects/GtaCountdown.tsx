@@ -53,7 +53,7 @@ export const GtaCountdown: React.FC = () => {
       <div className="relative z-10 flex flex-col items-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 mb-3 rounded-full bg-vice-pink/10 border border-vice-pink/30 text-xs font-display font-bold uppercase tracking-widest text-vice-pink">
           <Clock className="w-3.5 h-3.5" />
-          <span>Contagem Regressiva • 19/11 às 00:00</span>
+          <span>Contagem Regressiva • Estreia Hoje às 00:00</span>
         </div>
 
         <h3 className="text-xl sm:text-2xl font-display font-black text-white uppercase tracking-tight mb-4">
